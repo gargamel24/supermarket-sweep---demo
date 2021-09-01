@@ -71,13 +71,15 @@ let cost = 0
 let subTotal = 0
 let display = ""
 let subTotalSprite: TextSprite = null
+let randomy = 0
+let randomx = 0
 let player: Sprite = null
 let groceryImages: Image[] = []
 let groceryWeights: number[] = []
 let groceryCosts: number[] = []
 let groceryNames: string[] = []
 let speed = 0
-speed = 100
+speed = 85
 groceryNames = [
 "Milk",
 "Grape Soda",
@@ -101,15 +103,15 @@ groceryCosts = [
 1
 ]
 groceryWeights = [
-0.3,
-0.2,
-0.1,
-0.1,
-0.1,
-0.5,
-0.5,
-0.5,
-0.1
+10.3,
+10.2,
+5.1,
+5.1,
+0.01,
+10.5,
+8.5,
+8.5,
+8.1
 ]
 groceryImages = [
 img`
@@ -301,3 +303,9 @@ tiles.placeOnTile(player, tiles.getTileLocation(1, 3))
 createSubTotalSprite()
 createAllProducts()
 info.startCountdown(30)
+for (let index = 0; index <= 2; index++) {
+    randomx = randint(1, 13)
+    randomy = randint(2, 5)
+    tiles.setTileAt(tiles.getTileLocation(randomx, randomy), assets.tile`puddle`)
+    tiles.setWallAt(tiles.getTileLocation(randomx, randomy), true)
+}

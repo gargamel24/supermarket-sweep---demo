@@ -54,6 +54,12 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile11": {
+        "data": "hwQQABAAAAAAAACIiIiIiAAAiIiIiIiIAIiIiIiIiIgAiIiIiIiICACIiIiIiIiIAIiIiIiIiIgAiIiIiIiIiACIiIiIiIiIAIiIiIiIiIgAAAgAgIiICAAAAAAAiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "puddle"
+    },
     "level": {
         "id": "level",
         "mimeType": "application/mkcd-tilemap",
